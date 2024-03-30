@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="rr.css" id="page_style"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Ready Routes</title>
+</head>
+<body class="border">
+    <div>
+        <div>
+            <h1 class="title1">Ready Routes</h1>
+            <button class = "w3-button w3-white w3-xlarge" onClick="openBar()">☰</button>
+        </div>
+        <!--The 4 options are from Ryan-->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+            <button onClick="closeBar()" class="w3-bar-item w3-large">Close &times;</button>
+            <a onclick="window.location.href='index.html'" class="w3-bar-item w3-button">Home</a>
+            <a onclick="window.location.href='aboutUs.html'" class="w3-bar-item w3-button">About Us</a>
+            <a onclick="window.location.href='contus.html'" class="w3-bar-item w3-button">Contact Us</a>
+            <a onclick="window.location.href='what_new.html'" class="w3-bar-item w3-button">What's New?</a>
+        </div>
+
+        <!--All of this is from Adolfo-->
+        <div class="bodytext">
+            <h1 class="text-center" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                 Texas A&M College Station</h1>
+            <div class="container">
+                <div class = "form-group">
+                    <label class="labelnumber">1</label><input type="text" placeholder="Source Location" id ="source" class="inputbox"/>
+                </div>
+                <div class = "form-group">
+                    <label class="labelnumber">2</label><input type="text" placeholder="Destination Location" id ="dest" class="inputbox"/>
+                </div>
+                <div>
+                    <label class="labelnumber">3</label><input type="text" placeholder="Elevation" class="inputbox"/>
+                </div>
+                <div>
+                    <label class="labelnumber">4</label><input type="text" placeholder="Distance" class="inputbox"/>
+                </div>
+                <button id="submit" class="button1">Get Directions</button>
+            </div>
+            <div id="map"></div>
+            <!--change on ln 46-->
+            <p style="width: 48%; float: left;"></p>
+            <script src="rrtest.js"></script>
+            <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD21t1Jfiffk_8xJD7i4XjSMbpJpJf0E4o&callback=initMap&libraries=places">
+            </script>
+        </div>
+    </div>
+</body>
+</html>
