@@ -41,12 +41,12 @@ body {
     padding-left: 20px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: 	#3e3e42;
+    background-color: 	#ff8c00;
     border-radius: 8px;
 }
 
 .button1 {
-    background-color: #9941fc;
+    background-color: #0039c9;
     color: rgb(255, 255, 255);
     padding: 20px 20px;
     text-align: center;
@@ -60,7 +60,7 @@ body {
 }
 
 .button1:hover {
-    background-color: #d5b3fb;
+    background-color: #89b0ffb6;
     color: whitesmoke;
     transform: scale(1.05);
 }
@@ -134,7 +134,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     border-radius: 0.5rem;
-    background-color: #3e3e42;
+    background-color: #8b8b8b;
     box-sizing: border-box;
     box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
     padding: 0.25rem;
@@ -160,11 +160,11 @@ img {
     border-radius: 0.5rem;
     border: none;
     padding: .5rem 0;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     transition: all .15s ease-in-out;
   }
   
   .toggle .option input:checked + .name {
-    background-color: #9941fc;
+    background-color: #0039c9;
     font-weight: 600;
   }
